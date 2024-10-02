@@ -1,5 +1,4 @@
-package es.ieslavereda;
-
+package es.ieslavereda.ejercicio6;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,10 +52,10 @@ public class AdivinaNumero2 {
                 do {
                     num = (int) (Math.random() * 100001);
 
-
+                    synchronized (no) {
                         resultado = no.propuestaNumero(num, partida);
                         partida = no.getPartida();
-
+                    }
 
                 } while (resultado == 0);
 

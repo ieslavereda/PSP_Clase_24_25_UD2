@@ -1,4 +1,4 @@
-package es.ieslavereda;
+package es.ieslavereda.ejercicio6;
 
 import java.util.ArrayList;
 import java.util.List;
